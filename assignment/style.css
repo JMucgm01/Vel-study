@@ -1,0 +1,88 @@
+header{
+    position:sticky;
+    top: 0;
+}
+
+nav{
+    background-color: rgba(29, 29, 31, 0.8);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+body{
+    font-family: system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(29, 29, 31);
+}
+
+nav a{
+    width: auto;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: rgba(255,255,255, 0.8);
+    text-decoration: none;
+
+}
+
+
+h2{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: -0.28px;
+    line-height: 60px;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    flex-direction: column;
+
+}
+img{
+    max-width: 100%;
+    height: auto;    
+
+}
+
+.macGradient{
+    background: linear-gradient(to right, rgb(255, 199, 95), rgb(42, 102, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.macBook{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.iphoneDuo{
+    background-color: rgb(245, 245, 247);
+    text-align: center;
+}
+.featuredLinks{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 17px;
+    column-gap: 17px;
+
+}
+
+.title-subhead{
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: .007em;
+    margin-top: 6px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
