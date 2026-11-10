@@ -1,0 +1,15 @@
+# Learner environment, credentials and build artifacts
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+target/
+.gradle/
+coverage/
+*.log
+.DS_Store
+.claude/settings.local.json
+.claude/skills
+.agents/skills
