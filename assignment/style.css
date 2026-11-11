@@ -1,20 +1,33 @@
 header{
     position:sticky;
     top: 0;
+    background-color: rgba(29, 29, 31, 0.8);
+    backdrop-filter: saturate(180%)blur(20px);
+    -webkit-backdrop-filter: saturate(180%)blur(20px);
+    z-index: 2;
 }
 
 nav{
-    background-color: rgba(29, 29, 31, 0.8);
     display: flex;
-    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-left: 22px;
+    padding-right: 22px;
     justify-content: space-between;
     align-items: center;
+
+}
+
+main{
+    display:grid;
+    gap:12px;
 
 }
 
 body{
     font-family: system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: rgb(29, 29, 31);
+    margin: 0;
 }
 
 nav a{
@@ -39,20 +52,52 @@ h2{
     -webkit-font-smoothing: antialiased;
 }
 
-p{
-    display: block;
-    margin-block-start: 1em;
-    flex-direction: column;
+section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 
 }
-img{
-    max-width: 100%;
-    height: auto;    
 
+footer{
+    font-size: 12px;
+    letter-spacing: -0.12px;
+    color: rgba(0, 0, 0, 0.56);
+    background-color: rgb(245, 245, 247);
 }
 
+footer a{
+    color: rgba(0, 0, 0, 0.72);
+    text-decoration: none;
+    font-weight: 400;
+    line-height: 16.000479px;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer li{
+    padding: 0 8px;
+    border-right: 1px solid rgba(0, 0, 0, 0.48);
+}
+
+/* Removes the last border in the list*/
+footer li:last-child{
+    border-right: none;
+}
+
+/* CLASSES */
 .macGradient{
-    background: linear-gradient(to right, rgb(255, 199, 95), rgb(42, 102, 255));
+    background: linear-gradient(to right, #fdd30f, #f4f6f7, #90ceee, #48a7f4, #2789ff);
+    width: fit-content;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -62,21 +107,25 @@ img{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 48px 0 56px;
+    position: relative;
+    height: 580px;
+    overflow:hidden;
+    box-sizing: border-box;
+
+    
 }
+
 
 .iphoneDuo{
     background-color: rgb(245, 245, 247);
     text-align: center;
+    padding: 48px 0 56px;
+    position: relative;
+    height: 580px;
+    overflow:hidden;
+    box-sizing: border-box;
 }
-.featuredLinks{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 17px;
-    column-gap: 17px;
-
-}
-
 .title-subhead{
     font-size: 28px;
     line-height: 1.1;
@@ -85,4 +134,73 @@ img{
     margin-top: 6px;
     margin-inline-start: auto;
     margin-inline-end: auto;
+}
+
+.featuredText{
+    position: relative;
+    z-index: 1;
+}
+.featuredLinks{
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 17px;
+    font-size: 17px;
+    line-height: 1.1764805882;
+    font-weight: 400;
+    letter-spacing: -.022em;
+
+}
+
+.button{
+    background-color: rgb(0, 113, 227);
+    border: 1px solid transparent;
+    border-radius: 980px;
+    color: rgb(255, 255, 255);
+    padding: 11px 21px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.1764805882;
+    letter-spacing: -.022em;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    
+}
+.button:hover{
+    background-color: #0076DF;
+}
+.button:active{
+    background-color: #006EDB;
+}
+.buttonSecondary{
+    background-color: transparent;
+    border: 1px solid rgb(0, 102, 204);
+    color: rgb(0, 102, 204);
+
+}
+
+.macBook .buttonSecondary{
+    border-color: rgb(41, 151, 255);
+    color: rgb(41, 151, 255);
+}
+
+.buttonSecondary:hover{
+    background-color: #0076DF;
+    color: white;
+}
+.buttonSecondary:active{
+    background-color: #006EDB;
+    color: white;
+}
+
+.footerRow{
+    display: flex;
+    align-items: center;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0px 22px;
+}
+
+.footerRegion{
+    margin-left: auto;
 }
