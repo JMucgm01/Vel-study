@@ -236,6 +236,7 @@ footer li:last-child{
         margin-top: 16px;
     }
 }
+/* At this screen width the nav bar links are hidden and the menu button is shown */
 @media (max-width: 833px) {
 
     .navLink{
