@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head> <meta charset="UTF-8"><link rel="stylesheet" href="style.css"><title>Apple Home - Study</title></head>
+    <head> <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta charset="UTF-8"><link rel="stylesheet" href="style.css">
+        <title>Apple Home - Study</title>
+    </head>
 
     <body>
         <header>
-            <nav> <a href="#apple"><img src ="icons/apple.svg" alt="Apple"></a> <a href="#Store">Store</a> <a href="#Mac">Mac</a> <a href="#iPad">iPad</a> <a href="#iPhone">iPhone</a> <a href="#Watch">Watch</a>
-                 <a href="#Vision">Vision</a><a href="#AirPods">AirPods</a> <a href="#Home">Home</a> <a href="#Entertainment">Entertainment</a> <a href="#Accessories">Accessories</a>
-                 <a href="#Support">Support</a> <a href="#Search"><img src ="icons/search.svg" alt="Search"></a> <a href="#Cart"><img src ="icons/bag.svg" alt="Cart"></a> </nav>
+            <nav> 
+                <a href="homePage.html">
+                    <picture>
+                        <source media="(max-width: 833px)" srcset="icons/apple-compact.svg">
+                        <img src ="icons/apple.svg" alt="Apple">
+                    </picture>
+                </a>
+            
+                <a class="navLink" href="navLinks/storePage.html">Store</a> <a class="navLink" href="navLinks/macPage.html">Mac</a> <a class="navLink" href="navLinks/ipadPage.html">iPad</a>
+            <a class="navLink" href="navLinks/iphonePage.html">iPhone</a> <a class="navLink" href="navLinks/applewatchPage.html">Watch</a><a class="navLink" href="navLinks/visionPage.html">Vision</a>
+            <a class="navLink" href="navLinks/airpodsPage.html">AirPods</a> <a class="navLink" href="navLinks/smartHomePage.html">Home</a> <a class="navLink" href="navLinks/entertainmentPage.html">Entertainment</a>
+            <a class="navLink" href="navLinks/accessoriesPage.html">Accessories</a><a class="navLink" href="navLinks/supportPage.html">Support</a>
+                
+                <a class="searchSpacing" href="#Search">
+                    <picture>
+                        <source media="(max-width: 833px)" srcset="icons/search-compact.svg">
+                        <img src ="icons/search.svg" alt="Search">
+                    </picture>
+                </a> 
+                
+                <a href="#Cart">
+                    <picture>
+                        <source media="(max-width: 833px)" srcset="icons/bag-compact.svg">
+                        <img src ="icons/bag.svg" alt="Cart">
+                    </picture>
+                </a>
+
+                <button class="menuButton">
+                    <img src="icons/menu.svg" alt="Menu">
+                </button>
+            </nav>
         </header>
         <main>
             <section class="iphoneDuo">
@@ -18,8 +48,13 @@
                             <a class="button" href="#Learn">Learn more</a> <a class="button buttonSecondary" href="#Buy">Buy</a>
                         </div>
                 </div>
-
-                    <a href="#Duo"><img src ="images/duoLarge_2.jpg" alt="iPhone Duo"></a>
+                    <a href="#Duo">
+                        <picture>
+                            <source media="(max-width: 734px)" srcset="images/duoSmall_2x.jpg">
+                            <source media="(max-width: 1068px)" srcset="images/duoMediumtall_2x.jpg">
+                            <img src ="images/duoLargetall_2x.jpg" alt="iPhone Duo">
+                        </picture>
+                    </a>
                 
             </section>
 
@@ -32,8 +67,13 @@
                             <a class="button" href="#Learn">Learn more</a> <a class="button buttonSecondary" href="#Buy">Buy</a>
                         </div>
                 </div>
-
-                    <a href="#Proled"><img src ="images/macLarge_2.jpg" alt="MacBook Pro"></a>
+                    <a href="#Proled">
+                        <picture>  
+                            <source media="(max-width: 734px)" srcset="images/macSmall_2x.jpg">
+                            <source media="(max-width: 1068px)" srcset="images/macMediumtall_2x.jpg">
+                            <img src ="images/macLargetall_2x.jpg" alt="MacBook Pro">
+                        </picture>
+                    </a>
             
             </section>
         </main>
@@ -52,5 +92,6 @@
                 <a class="footerRegion" href="#Region">United States</a>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
-</html>
+    </html>

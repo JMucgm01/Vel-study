@@ -1,7 +1,7 @@
 header{
     position:sticky;
     top: 0;
-    background-color: rgba(29, 29, 31, 0.8);
+    background-color: rgba(245, 245, 247, 0.8);
     backdrop-filter: saturate(180%)blur(20px);
     -webkit-backdrop-filter: saturate(180%)blur(20px);
     z-index: 2;
@@ -15,7 +15,6 @@ nav{
     padding-right: 22px;
     justify-content: space-between;
     align-items: center;
-
 }
 
 main{
@@ -35,19 +34,19 @@ nav a{
     font-size: 12px;
     font-weight: 400;
     letter-spacing: -.01em;
-    color: rgba(255,255,255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
-
 }
 
+nav img{ display:block;}
 
-h2{
+h1, h2{
     box-sizing: border-box;
     text-align: center;
     font-size: 56px;
     font-weight: 600;
     letter-spacing: -0.28px;
-    line-height: 60px;
+    line-height: 1.0714285714;
     margin: 0;
     -webkit-font-smoothing: antialiased;
 }
@@ -95,6 +94,12 @@ footer li:last-child{
 }
 
 /* CLASSES */
+.menuButton{
+    display:none;
+    background:none;
+    border: none;
+    padding: 0;
+}
 .macGradient{
     background: linear-gradient(to right, #fdd30f, #f4f6f7, #90ceee, #48a7f4, #2789ff);
     width: fit-content;
@@ -107,9 +112,9 @@ footer li:last-child{
     background-color: black;
     color: white;
     text-align: center;
-    padding: 48px 0 56px;
+    padding: 56px 0 63px;
     position: relative;
-    height: 580px;
+    height: 692px;
     overflow:hidden;
     box-sizing: border-box;
 
@@ -120,9 +125,9 @@ footer li:last-child{
 .iphoneDuo{
     background-color: rgb(245, 245, 247);
     text-align: center;
-    padding: 48px 0 56px;
+    padding: 56px 0 63px;
     position: relative;
-    height: 580px;
+    height: 692px;
     overflow:hidden;
     box-sizing: border-box;
 }
@@ -132,6 +137,7 @@ footer li:last-child{
     font-weight: 400;
     letter-spacing: .007em;
     margin-top: 6px;
+    margin-bottom: 0;
     margin-inline-start: auto;
     margin-inline-end: auto;
 }
@@ -139,6 +145,7 @@ footer li:last-child{
 .featuredText{
     position: relative;
     z-index: 1;
+    text-align: center;
 }
 .featuredLinks{
     display: flex;
@@ -204,3 +211,86 @@ footer li:last-child{
 .footerRegion{
     margin-left: auto;
 }
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 1068px) {
+    h1, h2 {
+        font-size: 48px;
+        line-height: 1.0834933333;
+        letter-spacing: -.002em;
+    }
+    .title-subhead {
+        margin-top: 4px;
+        font-size: 24px;
+        line-height: 1.1666666667;
+        letter-spacing: .009em;
+    }
+    .iphoneDuo, .macBook{
+        padding: 61px 0 69px;
+        height: 650px;
+
+    }
+    .featuredLinks{
+        margin-top: 16px;
+    }
+}
+@media (max-width: 833px) {
+
+    .navLink{
+        display: none;
+        order:1;
+    }
+
+    nav.menuOpen{   
+        flex-wrap:wrap;
+    }
+    
+    nav.menuOpen .navLink{
+        display: block;
+        width: 100%;
+    }
+
+    .searchSpacing{margin-left: auto;}
+    nav{ 
+        gap: 31px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+    .menuButton{
+        display: block;
+    }
+    
+}
+
+@media (max-width: 734px) {
+    h1, h2 {
+        font-size: 32px;
+        line-height: 1.125;
+        letter-spacing: .002em;
+    }
+    .title-subhead {
+        font-size: 19px;
+        line-height: 1.2105263158;
+        letter-spacing: .012em;
+    }
+    .iphoneDuo, .macBook{
+        padding: 39px 0 43px;
+        height: 500px;
+    }
+    .featuredLinks{
+        margin-top: 11px;
+        column-gap: 14px;
+    }
+    .button{
+        font-size: 14px;
+        letter-spacing: -0.224px;
+        line-height: 18.000839px;
+        min-width: 28px;
+        padding: 8px 15px;
+    }
+}
+
