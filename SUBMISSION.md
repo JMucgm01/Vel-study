@@ -14,12 +14,17 @@ For these links, made sure there weren't any typos when referencing the file. I 
 Now that i stored the screenshots, i went into my webpages elements and network tab and after refreshing the page with cmd+R i saw that my html,css,js, jpg, and svg files have loaded properly. After, i scaled the page to be at an iphones aspect ratio and clicked the menu, checking the console tab and seeing that i had no errors and the click was registered.
 
 ## Flexbox vs Grid
+Felxbox is like my navbar. items listed in one direction.
+grid is like my main, the img and featuredText
 
-Flexbox is a nice way to display webpage options without overcrowding the screen. However, when the screens width gets too narrow (when using a phone for example) it makes more sense to have those in a grid view hidden behind a drop down menu. This avoids clutter and having overlapping or just terribly tight text.
+Flexbox is a nice way to display webpage options without overcrowding the screen. And when the screens width gets too narrow (when using a phone for example) it makes more sense to have those in a vertical flexbox view hidden behind a drop down menu. This avoids clutter and having overlapping or just terribly tight text.
+Grid layout is better when spreading out content throught the screen like the body of a page. 
 
 ## Relative paths
 
-Wether it be href or img src, These reference relative content based ona. relative path. Meaning relative to the folder you are working on, how will the webpage get the content you are directing it towards. an example would be ../jimmyjohns.https to go back a page and then go into that html file.
+Wether it be href or img src, These reference relative content based ona. relative path. Meaning relative to the folder you are working on, how will the webpage get the content you are directing it towards. an example would be ../jimmyjohns.https to go up one folder and then go into that html file.
+
+an example from my files is like ../style.css for a navLinks/visionPage.html
 
 ## Why the script tag goes at the bottom
 
@@ -28,7 +33,9 @@ The script tag goes after everything in body because it needs to load everything
 ## Semantic HTML
 
 Semantics act like a guide for where content is positioned or what its purposed is. 
-an example would be how the body tag desribes what the main content for the page will be. if there is a webpage for a recipe. the body will contain everything having to do with the recipe. 
+an example would be how the main tag desribes what the main content for the page will be. if there is a webpage for a recipe. the main will contain everything having to do with the recipe. 
+
+the body is everything visible.
 
 the header is for anything going at the very top of the page. typically redirection links and icons/banners.
 
@@ -39,9 +46,10 @@ also h1-6 are like headers and are made in layers by iportance.
 ## Git commands I used
 
  git status to see what changes i have made.
- git add . to have a local push and show up in git status.
- git commmit -m to get it ready to be pushed to the repo and add a discription.
+ git add . gets your changes ready for the commit and show up in git status.
+ git commmit -m to get it ready to be pushed to the repo and add a discription. saves locally
  git mv to change my file name.
+ git push uploads it to GitHub
  
 
 ## Still different / unsure
