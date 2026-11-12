@@ -1,6 +1,7 @@
 ## Repo + commit
 
 https://github.com/JMucgm01/Vel-study
+commit ID: 1a59270
 
 ## What changes at each width (see RESPONSIVE_NOTES.md + screenshots/)
 
